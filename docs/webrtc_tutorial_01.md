@@ -3,7 +3,9 @@ MediaDevices.getUserMedia()
 
 ## 演示效果  
 
-![demo-01](/images/demo-01.png)  
+![demo-01](/docs/images/demo-01.png)     
+
+[代码地址](/docs/demo-01/index.html)    
 
 ## 简介  
 
