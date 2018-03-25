@@ -47,4 +47,5 @@ function errorMsg(msg, error) {
     }
 }
 
+// Navigator 对象包含有关浏览器的信息。
 navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
