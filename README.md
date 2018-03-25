@@ -99,6 +99,9 @@ WebRTC有三个模块：
 * [从您的摄像头流式传输视频](/docs/demo-01/index.html)  
 * [使用RTCPeerConnection流式传输视频](/docs/demo-02/index.html)  
 * [使用RTCDataChannel交换数据](/docs/demo-03/index.html)  
+* [DEMO - 获取摄像头信息流](/docs/tinywan-demo-02/index.html)  
+* [DEMO - 创建一个拍照室应用](/docs/tinywan-demo-02/index.html)  
+* [DEMO - 修改媒体流，添加CSS样式滤镜](/docs/tinywan-demo-03/index.html)  
 
 ## 文档  
 
