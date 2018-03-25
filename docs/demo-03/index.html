@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Realtime communication with WebRTC</title>
+
+  <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+
+  <h1>Realtime communication with WebRTC</h1>
+
+  <textarea id="dataChannelSend" disabled
+    placeholder="Press Start, enter some text, then press Send."></textarea>
+  <textarea id="dataChannelReceive" disabled></textarea>
+
+  <div id="buttons">
+    <button id="startButton">Start</button>
+    <button id="sendButton">Send</button>
+    <button id="closeButton">Stop</button>
+  </div>
+
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

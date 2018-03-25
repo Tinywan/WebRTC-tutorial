@@ -1,11 +1,10 @@
 WebRTC  
 ========================
+![Author](https://img.shields.io/badge/Author-Tinywan-green.svg)  ![Conda](https://img.shields.io/conda/pn/conda-forge/python.svg)  ![GitHub license](https://img.shields.io/github/license/Tinywan/tinywan-react-app.svg)
 
-**WebRTC**(Web Real-Time Communications) 是一项实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点（Peer-to-Peer）的连接，实现视频流和（或）音频流或者其他任意数据的传输。WebRTC包含的这些标准使用户在无需安装任何插件或者第三方的软件的情况下，创建点对点（Peer-to-Peer）的数据分享和电话会议成为可能。  
+**WebRTC** （Web Real-Time Communications） 是一项实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点（Peer-to-Peer）的连接，实现视频流和（或）音频流或者其他任意数据的传输。WebRTC包含的这些标准使用户在无需安装任何插件或者第三方的软件的情况下，创建点对点（Peer-to-Peer）的数据分享和电话会议成为可能。  
 
-它并不是单一的协议，包含了媒体、加密、传输层等在内的多个协议标准以及一套基于 JavaScript 的 API。通过简单易用的 JavaScript API ，在不安装任何插件的情况下，让浏览器拥有了 P2P音视频和数据分享的能力。  
-
-同时WebRTC 并不是一个孤立的协议，它拥有灵活的信令，可以便捷的对接现有的SIP 和电话网络的系统。   
+它并不是单一的协议，包含了媒体、加密、传输层等在内的多个协议标准以及一套基于 JavaScript 的 API。通过简单易用的 JavaScript API ，在不安装任何插件的情况下，让浏览器拥有了 P2P音视频和数据分享的能力。同时WebRTC 并不是一个孤立的协议，它拥有灵活的信令，可以便捷的对接现有的SIP 和电话网络的系统。   
 
 ## WebRTC 内部结构  
 
@@ -17,12 +16,23 @@ WebRTC
 * 蓝色实线部分是面向浏览器厂商的API层  
 * 蓝色虚线部分浏览器厂商可以自定义实现  
 
-## WebRTC 提供的 JavaScript API  
+WebRTC有三个模块：  
+* Voice Engine（音频引擎）  
 
-* [getUserMedia()](https://webrtc.github.io/samples/src/content/getusermedia/gum/)：捕捉音频和视频  
-* [MediaRecorder](https://webrtc.github.io/samples/src/content/getusermedia/record/)：录制音频和视频  
-* [RTCPeerConnection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/)：在用户之间流式传输音频和视频  
-* [RTCDataChannel](https://webrtc.github.io/samples/src/content/datachannel/basic/)：在用户之间传输数据  
+  * Voice Engine包含iSAC/iLBC Codec（音频编解码器，前者是针对宽带和超宽带，后者是针对窄带）  
+  * NetEQ for voice（处理网络抖动和语音包丢失）  
+  * Echo Canceler（回声消除器）/ Noise Reduction（噪声抑制）  
+
+* Video Engine（视频引擎）  
+  * VP8 Codec（视频图像编解码器）  
+  * Video jitter buffer（视频抖动缓冲器，处理视频抖动和视频信息包丢失）  
+  * Image enhancements（图像质量增强）  
+* Transport   
+  * SRTP（安全的实时传输协议，用以音视频流传输）  
+  * Multiplexing（多路复用）  
+  * P2P，STUN+TURN+ICE（用于NAT网络和防火墙穿越的）  
+  * 除此之外，安全传输可能还会用到DTLS（数据报安全传输），用于加密传输和密钥协商   
+  * 整个WebRTC通信是基于UDP的  
 
 ## WebRTC 的核心组件  
 
@@ -73,8 +83,24 @@ WebRTC
   * SCTP：流控制传输协议（RFC 4960）  
   * SRTP：安全实时传输协议（RFC 3711）  
 
+## WebRTC 提供的 JavaScript API  
+
+* [getUserMedia()](https://webrtc.github.io/samples/src/content/getusermedia/gum/)：捕捉音频和视频  
+* [MediaRecorder](https://webrtc.github.io/samples/src/content/getusermedia/record/)：录制音频和视频  
+* [RTCPeerConnection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/)：在用户之间流式传输音频和视频  
+* [RTCDataChannel](https://webrtc.github.io/samples/src/content/datachannel/basic/)：在用户之间传输数据  
+
+##  接口详  
+
+* 1 - [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)   
+
 ##  实战  
 
-#### 1 - [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)   
+* [从您的摄像头流式传输视频](/docs/demo-01/index.html)  
+* [使用RTCPeerConnection流式传输视频](/docs/demo-02/index.html)  
+* [使用RTCDataChannel交换数据](/docs/demo-03/index.html)  
 
+## 文档  
+
+* [一步一步学习 WebRTC](https://codelabs.developers.google.com/codelabs/webrtc-web)  
 

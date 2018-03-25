@@ -6,21 +6,11 @@
  * |  DateTime: 2018/3/24 22:14
  * |  Mail: Overcome.wan@Gmail.com
  * '------------------------------------------------------------------------------------------------------------------*/
-'use strict';
-
-var constraints = {
-  video: true
-};
-
-var video = document.querySelector('video');
-
-function handleSuccess(stream) {
-  video.srcObject = stream;
+body {
+  font-family: sans-serif;
 }
 
-function handleError(error) {
-  console.error('getUserMedia error: ', error);
+video {
+  max-width: 100%;
+  width: 320px;
 }
-
-navigator.mediaDevices.getUserMedia(constraints).
-  then(handleSuccess).catch(handleError);
