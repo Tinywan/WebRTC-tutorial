@@ -1,13 +1,13 @@
 WebRTC  
 ========================
 
-**WebRTC **(Web Real-Time Communications) 是一项实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点（Peer-to-Peer）的连接，实现视频流和（或）音频流或者其他任意数据的传输。WebRTC包含的这些标准使用户在无需安装任何插件或者第三方的软件的情况下，创建点对点（Peer-to-Peer）的数据分享和电话会议成为可能。  
+**WebRTC**(Web Real-Time Communications) 是一项实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点（Peer-to-Peer）的连接，实现视频流和（或）音频流或者其他任意数据的传输。WebRTC包含的这些标准使用户在无需安装任何插件或者第三方的软件的情况下，创建点对点（Peer-to-Peer）的数据分享和电话会议成为可能。  
 
 它并不是单一的协议，包含了媒体、加密、传输层等在内的多个协议标准以及一套基于 JavaScript 的 API。通过简单易用的 JavaScript API ，在不安装任何插件的情况下，让浏览器拥有了 P2P音视频和数据分享的能力。  
 
 同时WebRTC 并不是一个孤立的协议，它拥有灵活的信令，可以便捷的对接现有的SIP 和电话网络的系统。   
 
-## WebRTC内部结构  
+## WebRTC 内部结构  
 
 ![demo-01](/docs/images/WebRTC内部结构.png)   
 
@@ -16,6 +16,13 @@ WebRTC
 * 紫色部分是Web开发者API层  
 * 蓝色实线部分是面向浏览器厂商的API层  
 * 蓝色虚线部分浏览器厂商可以自定义实现  
+
+## WebRTC 提供的 JavaScript API  
+
+* [getUserMedia()](https://webrtc.github.io/samples/src/content/getusermedia/gum/)：捕捉音频和视频  
+* [MediaRecorder](https://webrtc.github.io/samples/src/content/getusermedia/record/)：录制音频和视频  
+* [RTCPeerConnection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/)：在用户之间流式传输音频和视频  
+* [RTCDataChannel](https://webrtc.github.io/samples/src/content/datachannel/basic/)：在用户之间传输数据  
 
 ## WebRTC 的核心组件  
 
@@ -31,7 +38,7 @@ WebRTC
 
 * 信令与 SDP 协商：HTTP / WebSocket / SIP、 Offer Answer 模型  
 
-## WebRTC音频和视频引擎  
+## WebRTC 音频和视频引擎  
 
 ![demo-01](/docs/images/WebRTC音频和视频引擎.png)  
 
@@ -47,7 +54,7 @@ WebRTC
 * WebRTC 核心的协议都是在右侧基于 UDP 基础上搭建起来的  
 
 * 其中，ICE、STUN、TURN 用于内网穿透, 解决了获取与绑定外网映射地址，以及 keep alive 机制  
-* DTLS 用于对传输内容进行加密，可以看做是 UDP 版的 TLS。由于 WebRTC 对安全比较重视，这一层是必须的  
+* DTLS 用于对传输内容进行加密，可以看做是 UDP 版的 TLS。由于 WebRTC 对安全比较重视，这一层是必须的。所有WebRTC组件都必须加密，并且其JavaScript API只能用于安全源（HTTPS或本地主机）。信令机制并不是由WebRTC标准定义的，所以您必须确保使用安全协议。  
 
 * SRTP 与 SRTCP 是对媒体数据的封装与传输控制协议  
 
@@ -66,7 +73,7 @@ WebRTC
   * SCTP：流控制传输协议（RFC 4960）  
   * SRTP：安全实时传输协议（RFC 3711）  
 
-##  实战目录  
+##  实战  
 
 #### 1 - [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)   
 
