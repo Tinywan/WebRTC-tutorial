@@ -1,6 +1,6 @@
-:smiling_imp: WebRTC  
-========================
-![Author](https://img.shields.io/badge/Author-Tinywan-green.svg)  ![Conda](https://img.shields.io/conda/pn/conda-forge/python.svg)  ![GitHub license](https://img.shields.io/github/license/Tinywan/tinywan-react-app.svg)
+![webrtc-logo740x140.png](/docs/images/webrtc-logo740x140.png)  
+
+![Author](https://img.shields.io/badge/Author-Tinywan-green.svg)  
 
 **WebRTC** （Web Real-Time Communications） 是一项实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点（Peer-to-Peer）的连接，实现视频流和（或）音频流或者其他任意数据的传输。WebRTC包含的这些标准使用户在无需安装任何插件或者第三方的软件的情况下，创建点对点（Peer-to-Peer）的数据分享和电话会议成为可能。  
 
