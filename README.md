@@ -91,8 +91,8 @@ WebRTC有三个模块：
 * [RTCDataChannel](https://webrtc.github.io/samples/src/content/datachannel/basic/)：在用户之间传输数据  
 
 ##  接口详  
-
-* 1 - [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)   
+- [x] [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)     
+- [x] RTCPeerConnection  
 
 ##  实战  
 
