@@ -92,7 +92,7 @@ WebRTC有三个模块：
 
 ##  接口详  
 - [x] [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)     
-- [x] RTCPeerConnection  
+- [ ] RTCPeerConnection 接口详解 
 
 ##  实战  
 
