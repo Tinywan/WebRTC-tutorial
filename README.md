@@ -1,12 +1,18 @@
 <div align="center">
   <img src="/docs/images/webrtc-logo740x140.png"><br><br>
-</div>
+</div>  
+
+WebRTC is a free, open project that provides browsers and mobile applications with Real-Time Communications (RTC) capabilities via simple APIs. The WebRTC components have been optimized to best serve this purpose.  
 
 ---
 
-| **`Chrome`** | **`Firefox`** | **`Edge`** | **`Safari`** | **`IE`** | **`LICENSE`** |
-|-----------------|---------------------|------------------|-------------------|---------------|---------------|
-| [![Build Status](https://ci.tensorflow.org/buildStatus/icon?job=tensorflow-master-linux-gpu)](https://ci.tensorflow.org/job/tensorflow-master-linux-gpu) | [![Build Status](https://ci.tensorflow.org/buildStatus/icon?job=tensorflow-master-linux-gpu)](https://ci.tensorflow.org/job/tensorflow-master-linux-gpu) | [![Build Status](https://ci.tensorflow.org/buildStatus/icon?job=tensorflow-master-linux-gpu)](https://ci.tensorflow.org/job/tensorflow-master-linux-gpu) | [![Build Status](https://ci.tensorflow.org/buildStatus/icon?job=tensorflow-master-linux-gpu)](https://ci.tensorflow.org/job/tensorflow-master-linux-gpu) | [![Build Status](https://ci.tensorflow.org/buildStatus/icon?job=tensorflow-master-win-cmake-py)](https://ci.tensorflow.org/job/tensorflow-master-win-cmake-py) | ![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)   
+## 支持的浏览器和平台  
+
+|   [Chrome](http://chrome.google.com/)    | [Firefox](https://www.mozilla.org/en-US/firefox/new/) |      [Opera](http://www.opera.com/)      | [Android](https://webrtc.org/native-code/android/) | [iOS](https://webrtc.org/native-code/ios/) |
+| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| ![chrome](/docs/images/chrome-128x128.png) | ![firefox](/docs/images/firefox-128x128.png) | ![Opera](/docs/images/opera-128x128.png) | ![android](/docs/images/android-128x128.png) | ![apple](/docs/images/apple-128x128.png) |
+
+## 简介  
 
 **WebRTC** （Web Real-Time Communications） 是一项实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点（Peer-to-Peer）的连接，实现视频流和（或）音频流或者其他任意数据的传输。WebRTC包含的这些标准使用户在无需安装任何插件或者第三方的软件的情况下，创建点对点（Peer-to-Peer）的数据分享和电话会议成为可能。  
 
