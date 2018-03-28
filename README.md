@@ -8,7 +8,7 @@
 
 ## 支持的浏览器和平台  
 
-|   [Chrome](http://chrome.google.com/)    | [Firefox](https://www.mozilla.org/en-US/firefox/new/) |      [Opera](http://www.opera.com/)      | [iOS](https://webrtc.org/native-code/ios/) | [Android](https://webrtc.org/native-code/android/) | [iOS](https://webrtc.org/native-code/ios/) |
+|   [Chrome](http://chrome.google.com/)    | [Firefox](https://www.mozilla.org/en-US/firefox/new/) |      [Opera](http://www.opera.com/)      | [Safari](https://webrtc.org/native-code/ios/) | [Android](https://webrtc.org/native-code/android/) | [iOS](https://webrtc.org/native-code/ios/) |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
 | ![chrome](/docs/images/chrome-128x128.png) | ![firefox](/docs/images/firefox-128x128.png) | ![Opera](/docs/images/opera-128x128.png) | ![apple](/docs/images/Safari-128x128.png) | ![android](/docs/images/android-128x128.png) | ![apple](/docs/images/apple-128x128.png) |
 
