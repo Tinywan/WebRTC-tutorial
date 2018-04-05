@@ -3,7 +3,7 @@ MediaDevices.getUserMedia()
 
 ## 演示效果  
 
-![demo-01](/docs/images/demo-01.png)     
+![demo-01](/docs/images/demo-01.gif)     
 
 [代码地址](/docs/demo-01/index.html)    
 
@@ -147,7 +147,7 @@ var promise = navigator.mediaDevices.getUserMedia(constraints)
 
 ```javascript
 // 想要获取一个最接近 1280x720 的相机分辨率
-var constraints = { audio: true, video: { width: 1280, height: 720 } }; 
+var constraints = { audio: true, video: { width: 1280, height: 720 } };
 
 navigator.mediaDevices.getUserMedia(constraints)
 .then(function(mediaStream) {
@@ -170,7 +170,7 @@ if (navigator.mediaDevices === undefined) {
   navigator.mediaDevices = {};
 }
 
-// 一些浏览器部分支持 mediaDevices。我们不能直接给对象设置 getUserMedia 
+// 一些浏览器部分支持 mediaDevices。我们不能直接给对象设置 getUserMedia
 // 因为这样可能会覆盖已有的属性。这里我们只会在没有getUserMedia属性的时候添加它。
 if (navigator.mediaDevices.getUserMedia === undefined) {
   navigator.mediaDevices.getUserMedia = function(constraints) {
@@ -246,15 +246,3 @@ var constraints = { video: { facingMode: (front? "user" : "environment") } };
 参见 [permission: audio-capture](https://developer.mozilla.org/en-US/Apps/Developing/App_permissions#audio-capture) 和 [permission: video-capture](https://developer.mozilla.org/en-US/Apps/Developing/App_permissions#video-capture) 来获取更多信息。  
 
 [原文](https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/getUserMedia)
-
-
-
-
-
-
-
-
-
-
-
-
