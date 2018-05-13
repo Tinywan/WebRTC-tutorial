@@ -97,13 +97,13 @@ WebRTC有三个模块：
 ## :hibiscus:  JavaScript API  
 
 * [getUserMedia()](https://webrtc.github.io/samples/src/content/getusermedia/gum/)：捕捉音频和视频  
-* [MediaRecorder](https://webrtc.github.io/samples/src/content/getusermedia/record/)：录制音频和视频  
 * [RTCPeerConnection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/)：在用户之间流式传输音频和视频  
 * [RTCDataChannel](https://webrtc.github.io/samples/src/content/datachannel/basic/)：在用户之间传输数据  
+* [MediaRecorder](https://webrtc.github.io/samples/src/content/getusermedia/record/)：录制音频和视频  
 
 ## :tulip: 接口教程  
 - [x] [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)     
-- [ ] RTCPeerConnection 接口详解 
+- [x] [RTCPeerConnection 接口详解](/docs/webrtc_tutorial_02.md)   
 
 ## :bouquet: 实战和DEMO教程  
 
@@ -114,7 +114,9 @@ WebRTC有三个模块：
 - [x] 创建一个拍照室应用  :memo: [源码](/docs/tinywan-demo-02/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-02/index.html)  
 - [x] 修改媒体流，添加CSS样式滤镜  :memo: [源码](/docs/tinywan-demo-03/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-03/index.html)  
 
-## :blue_book: 文档  
+## :blue_book: 相关参考  
 
+* [WebRTC官网](https://webrtc.org/)  
+* [WebRTC中文网](http://webrtc.org.cn/)  
 * [一步一步学习 WebRTC](https://codelabs.developers.google.com/codelabs/webrtc-web)  
 
