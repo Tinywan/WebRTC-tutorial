@@ -107,6 +107,8 @@ WebRTC有三个模块：
 
 ## :bouquet: 实战和DEMO教程  
 
+> 必须要有摄像头，（笔记本和手机默认支持）
+
 - [x] 从您的摄像头流式传输视频   :memo: [源码](/docs/demo-01/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-01/index.html)  
 - [x] 使用RTCPeerConnection流式传输视频  :memo: [源码](/docs/demo-02/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-02/index.html)  
 - [x] 使用RTCDataChannel交换数据 :memo: [源码](/docs/demo-03/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-03/index.html)   
