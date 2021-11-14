@@ -25,7 +25,8 @@ const App = {
                 video: false,
                 audio: deviceInfo
             };
-            this.$refs.audio.srcObject = await navigator.mediaDevices.getUserMedia(constraints);
+            // this.$refs.名字  获取的是标签对应的dom元素 ,
+            this.$refs.audioDevice.srcObject = await navigator.mediaDevices.getUserMedia(constraints);
         }
     },
     watch: {

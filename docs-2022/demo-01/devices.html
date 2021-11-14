@@ -8,7 +8,8 @@
 <h1>如何使用麦克风</h1>
 <div id="app">
     <div>
-        <audio controls autoplay ref="audio"></audio>
+        <!-- ref="audio" 给audio 起了一个引用的名字 audioDevice -->
+        <audio controls autoplay ref="audioDevice"></audio>
     </div>
     <div>
         <select v-model="selectedAudioDeviceIndex">
