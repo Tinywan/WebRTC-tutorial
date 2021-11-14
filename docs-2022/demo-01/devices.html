@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>如何使用麦克风</title>
+</head>
+<body>
+<h1>如何使用麦克风</h1>
+<div id="app">
+    <div>
+        <audio controls ref="audio"></audio>
+    </div>
+    <div>
+        <select v-model="selectAudioInputDeviceIndex">
+            <option v-for="(device,index) in audioInputDevices" :value="index">{{device.kind}}</option>
+        </select>
+    </div>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<!--<script src="main.js"></script>-->
+
+<script>
+    const App = {
+        data() {
+            return {
+                audioInputDevices: [],
+                selectAudioInputDeviceIndex: 0
+            }
+        },
+        mounted() {
+            this._initDevice();
+        },
+        methods: {
+            async _initDevice() {
+                // 读取所有设备
+                let devices = await navigator.mediaDevices.enumerateDevices();
+                // 筛选输入设备
+                let audioInputDeviceInfo = devices.filter(value => value.kind === 'audiooutput')
+                this.audioInputDevices.length = 0;
+                this.audioInputDevices.push(...audioInputDeviceInfo);
+                this.showCurrentSelectDevice();
+            },
+            showCurrentSelectDevice(){
+                let deviceInfo = this.audioInputDevices[this.selectAudioInputDeviceIndex];
+                let constraints = {
+                    video: false,
+                    audio: true
+                };
+                let stream = navigator.mediaDevices.getUserMedia(constraints);
+                this.$ref.audio.srcObject = stream;
+            }
+        },
+        watch: {
+            selectAudioInputDeviceIndex(){
+                this.showCurrentSelectDevice()
+            }
+        }
+    };
+    var vm = Vue.createApp(App).mount('#app');
+</script>
+</body>
+</html>
