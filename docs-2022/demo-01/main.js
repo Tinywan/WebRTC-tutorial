@@ -17,16 +17,15 @@ const App = {
             let audioInputDeviceInfo = devices.filter(value => value.kind === 'audioinput')
             this.audioInputDevices.length = 0;
             this.audioInputDevices.push(...audioInputDeviceInfo);
-            this.showSelectedDevice();
+            await this.showSelectedDevice();
         },
         async showSelectedDevice(){
             let deviceInfo = this.audioInputDevices[this.selectedAudioDeviceIndex];
             let constraints = {
                 video: false,
-                audio: true
+                audio: deviceInfo
             };
-            let stream = await navigator.mediaDevices.getUserMedia(constraints);
-            this.$refs.audio.srcObject = stream;
+            this.$refs.audio.srcObject = await navigator.mediaDevices.getUserMedia(constraints);
         }
     },
     watch: {
