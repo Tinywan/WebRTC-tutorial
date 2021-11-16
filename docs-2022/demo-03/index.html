@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>拍照</title>
+</head>
+<body>
+<h1>拍照</h1>
+<div id="app">
+    <div>
+        <video ref="video" autoplay width="400" height="300"></video>
+    </div>
+    <div>
+        <button @click="btnTakePhotoClicked">拍照</button>
+    </div>
+    <div>
+        <canvas ref="canvas" width="400" height="300"></canvas>
+    </div>
+</div>
+<script src="../vue.3.2.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

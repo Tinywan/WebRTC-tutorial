@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>录制视频</title>
+</head>
+<body>
+<h1>录制视频</h1>
+<div id="app">
+    <div>
+        <video ref="preview" width="200" height="150" autoplay></video>
+    </div>
+    <div>
+        <button @click="btnRecordClicked">录制</button>
+        <button @click="btnPauseClicked">暂停</button>
+        <button @click="btnResumeClicked">重新录制</button>
+        <button @click="btnStopClicked">停止</button>
+        <button @click="btnPlayerClicked">播放</button>
+    </div>
+    <div>
+        <video ref="player" autoplay controls width="400" height="300"></video>
+    </div>
+</div>
+<script src="../vue.3.2.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>录制声音</title>
+</head>
+<body>
+<h1>录制声音</h1>
+<div id="app">
+    <div>
+        <audio ref="player" autoplay controls></audio>
+    </div>
+    <div>
+        <button @click="btnRecordClicked">录制</button>
+        <button @click="btnPauseClicked">暂停</button>
+        <button @click="btnResumeClicked">重新录制</button>
+        <button @click="btnStopClicked">停止</button>
+        <button @click="btnPlayerClicked">播放</button>
+    </div>
+</div>
+<script src="../vue.3.2.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
