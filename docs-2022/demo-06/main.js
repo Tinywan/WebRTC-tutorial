@@ -13,6 +13,7 @@ const App = {
             this._stream = await navigator.mediaDevices.getDisplayMedia();
             this.$refs.preview.srcObject = this._stream;
             this._recorder = new MediaRecorder(this._stream, {mimeType:"video/webm;codes=h264"});
+            // 用.bind(this)来绑定运行环境
             this._recorder.ondataavailable = this.recorderDataAvailableHandle.bind(this)
         },
         recorderDataAvailableHandle(e){
