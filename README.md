@@ -2,10 +2,6 @@
   <img src="/docs/images/webrtc-logo740x140.png"><br><br>
 </div>  
 
-> WebRTC is a free, open project that provides browsers and mobile applications with Real-Time Communications (RTC) capabilities via simple APIs. The WebRTC components have been optimized to best serve this purpose.  
-
----
-
 ## :bouquet: 实战和DEMO教程  
 
 > 必须要有摄像头，（笔记本和手机默认支持）
