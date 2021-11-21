@@ -21,8 +21,8 @@
 - [x] (2022) 如何录制音频和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-04/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-04/index.html)  
 - [x] (2022) 如何录制视频和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-05/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-05/index.html)  
 - [x] (2022) 如何录制共享屏幕和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-06/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-06/index.html)  
-- [x] (2022) 如何实现共享屏幕和摄像头三分屏（Vue3）  :memo: [源码](/docs/docs-2022/demo-07/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-07/index.html)  
-- [x] (2022) 如何实现摄像头视频录制、播放、下载  :memo: [源码](/docs/docs-2022/demo-08/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-08/index.html)  
+- [x] (2022) 如何实现共享屏幕和摄像头三分屏（Vue3）  :memo: [源码](/docs/docs-2022/demo-07/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-07/video.html)  
+- [x] (2022) 如何实现摄像头视频录制、播放、下载  :memo: [源码](/docs/docs-2022/demo-08/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-08/recorder.html)  
 
 ## :blue_book: 支持的浏览器和平台  
 
