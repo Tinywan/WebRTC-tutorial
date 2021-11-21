@@ -6,9 +6,27 @@
 
 ---
 
-## 支持的浏览器和平台  
+## :bouquet: 实战和DEMO教程  
 
-|   [Chrome](http://chrome.google.com/)    | [Firefox](https://www.mozilla.org/en-US/firefox/new/) |      [Opera](http://www.opera.com/)      | [Safari](https://webrtc.org/native-code/ios/) | [Android](https://webrtc.org/native-code/android/) | [iOS](https://webrtc.org/native-code/ios/) |
+> 必须要有摄像头，（笔记本和手机默认支持）
+
+- [x] 从您的摄像头流式传输视频   :memo: [源码](/docs/demo-01/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-01/index.html)  
+- [x] 使用RTCPeerConnection流式传输视频  :memo: [源码](/docs/demo-02/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-02/index.html)  
+- [x] 使用RTCDataChannel交换数据 :memo: [源码](/docs/demo-03/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-03/index.html)   
+- [x] 获取摄像头信息流  :memo: [源码](/docs/tinywan-demo-01/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-01/index.html)   
+- [x] 创建一个拍照室应用  :memo: [源码](/docs/tinywan-demo-02/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-02/index.html)  
+- [x] 修改媒体流，添加CSS样式滤镜  :memo: [源码](/docs/tinywan-demo-03/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-03/index.html)  
+- [x] (2022) 如何使用麦克风（Vue3）  :memo: [源码](/docs/docs-2022/demo-01/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-01/device.html)  
+- [x] (2022) 如何使用摄像头拍照（Vue3）  :memo: [源码](/docs/docs-2022/demo-03/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-03/video.html)  
+- [x] (2022) 如何录制音频和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-04/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-04/index.html)  
+- [x] (2022) 如何录制视频和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-05/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-05/index.html)  
+- [x] (2022) 如何录制共享屏幕和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-06/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-06/index.html)  
+- [x] (2022) 如何实现共享屏幕和摄像头三分屏（Vue3）  :memo: [源码](/docs/docs-2022/demo-07/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-07/index.html)  
+- [x] (2022) 如何实现摄像头视频录制、播放、下载  :memo: [源码](/docs/docs-2022/demo-08/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-08/index.html)  
+
+## :blue_book: 支持的浏览器和平台  
+
+| [Chrome](http://chrome.google.com/)    | [Firefox](https://www.mozilla.org/en-US/firefox/new/) |      [Opera](http://www.opera.com/)      | [Safari](https://webrtc.org/native-code/ios/) | [Android](https://webrtc.org/native-code/android/) | [iOS](https://webrtc.org/native-code/ios/) |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
 | ![chrome](/docs/images/chrome-128x128.png) | ![firefox](/docs/images/firefox-128x128.png) | ![Opera](/docs/images/opera-128x128.png) | ![apple](/docs/images/Safari-128x128.png) | ![android](/docs/images/android-128x128.png) | ![apple](/docs/images/apple-128x128.png) |
 | Latest ✔ | Latest ✔ | Latest ✔ | 11+ ✔ | Latest ✔ | 11+ ✔ |
@@ -104,24 +122,6 @@ WebRTC有三个模块：
 ## :tulip: 接口教程  
 - [x] [MediaDevices.getUserMedia() 接口详解](/docs/webrtc_tutorial_01.md)     
 - [x] [RTCPeerConnection 接口详解](/docs/webrtc_tutorial_02.md)   
-
-## :bouquet: 实战和DEMO教程  
-
-> 必须要有摄像头，（笔记本和手机默认支持）
-
-- [x] 从您的摄像头流式传输视频   :memo: [源码](/docs/demo-01/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-01/index.html)  
-- [x] 使用RTCPeerConnection流式传输视频  :memo: [源码](/docs/demo-02/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-02/index.html)  
-- [x] 使用RTCDataChannel交换数据 :memo: [源码](/docs/demo-03/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/demo-03/index.html)   
-- [x] 获取摄像头信息流  :memo: [源码](/docs/tinywan-demo-01/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-01/index.html)   
-- [x] 创建一个拍照室应用  :memo: [源码](/docs/tinywan-demo-02/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-02/index.html)  
-- [x] 修改媒体流，添加CSS样式滤镜  :memo: [源码](/docs/tinywan-demo-03/index.html)  :computer: [在线演示](https://webrtc.tinywan.com/tinywan-demo-03/index.html)  
-- [x] (2022) 如何使用麦克风（Vue3）  :memo: [源码](/docs/docs-2022/demo-01/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-01/device.html)  
-- [x] (2022) 如何使用摄像头拍照（Vue3）  :memo: [源码](/docs/docs-2022/demo-03/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-03/video.html)  
-- [x] (2022) 如何录制音频和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-04/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-04/index.html)  
-- [x] (2022) 如何录制视频和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-05/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-05/index.html)  
-- [x] (2022) 如何录制共享屏幕和播放（Vue3）  :memo: [源码](/docs/docs-2022/demo-06/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-06/index.html)  
-- [x] (2022) 如何实现共享屏幕和摄像头三分屏（Vue3）  :memo: [源码](/docs/docs-2022/demo-07/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-07/index.html)  
-- [x] (2022) 如何实现摄像头视频录制、播放、下载  :memo: [源码](/docs/docs-2022/demo-08/device.html)  :computer: [在线演示](https://webrtc.tinywan.com/docs-2022/demo-08/index.html)  
 
 ## 源码或示例
 - [最全最详细案例](https://www.webrtc-experiment.com/)
