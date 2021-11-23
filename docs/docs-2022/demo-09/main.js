@@ -27,8 +27,7 @@ function start() {
         !navigator.mediaDevices.getUserMedia){
 
         console.log('getUserMedia is not supported!');
-        return;
-
+        return false;
     }else{
 
         var constraints = {

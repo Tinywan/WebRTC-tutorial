@@ -27,7 +27,7 @@ function start() {
         !navigator.mediaDevices.getUserMedia){
 
         console.log('getUserMedia is not supported!');
-        return;
+        return false;
 
     }else{
 
@@ -78,6 +78,7 @@ function startRecord(){
     // mediaRecorder.ondataavailable = handleDataAvailable;
     mediaRecorder.ondataavailable = function (e) {
         if(e && e.data && e.data.size > 0){
+            console.log(e.data);
             buffer.push(e.data);
         }
     };
