@@ -1,3 +1,5 @@
+![Alt](https://repobeats.axiom.co/api/embed/419c3efdf8c658c35a5b2a27b92eac34fffdb6f6.svg "Repobeats analytics image")
+
 <div align="center">
   <img src="/docs/images/webrtc-logo740x140.png"><br><br>
 </div>  
